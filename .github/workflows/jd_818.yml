@@ -20,7 +20,7 @@ jobs:
       - name: qyaaaa
         uses: actions/jd@v2
         with:
-          repository: lxk0301/scripts
+          repository: qyaaaa/jd
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v1
         with:
