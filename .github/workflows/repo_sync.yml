@@ -17,15 +17,15 @@ jobs:
       dst_key: ${{ secrets.GITEE_PRIVATE_KEY }}
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/jd@v2
+      - uses: actions/checkout@v2
         with:
           persist-credentials: false
 
-      - name: sync lxk0301-scripts
+      - name: sync qyaaaa/jd
         uses: repo-sync/github-sync@v2
         if: env.PAT
         with:
-          source_repo: "https://github.com/lxk0301/scripts.git"
+          source_repo: "https://github.com/qyaaaa/jd.git"
           source_branch: "master"
           destination_branch: "master"
           github_token: ${{ secrets.PAT }}
