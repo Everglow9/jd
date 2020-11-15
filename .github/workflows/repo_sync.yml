@@ -21,11 +21,11 @@ jobs:
         with:
           persist-credentials: false
 
-      - name: sync qyaaaa/jd
+      - name: sync Everglow9/jd
         uses: repo-sync/github-sync@v2
         if: env.PAT
         with:
-          source_repo: "https://github.com/qyaaaa/jd.git"
+          source_repo: "https://github.com/Everglow9/jd.git"
           source_branch: "master"
           destination_branch: "master"
           github_token: ${{ secrets.PAT }}
